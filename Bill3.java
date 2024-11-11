@@ -9,6 +9,6 @@ public class Bill3 {
 
         double pay = Math.ceil(bill / 3.0);
 
-        System.out.println("Dear " + Name1 + ", " + Name2 + ", and " + Name3 + ": pay " + pay + " Shekels each.");
+        System.out.println("Dear " + Name3 + ", " + Name2 + ", and " + Name1 + ": pay " + pay + " Shekels each.");
     }
 }
