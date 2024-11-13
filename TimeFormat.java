@@ -1,15 +1,18 @@
 public class TimeFormat {
     public static void main(String[] args) {
-        String time = args[0]; 
-        
-        String[] parts = time.split(":");
-         int hours = Integer.parseInt(args[0].split(":")[0]);
+        int hours = Integer.parseInt(args[0].split(":")[0]);
         int minutes = Integer.parseInt(args[0].split(":")[1]);
+
         String period;
         if (hours < 12) {
             period = "AM";
         } else {
             period = "PM";
+        }
+
+        if (hours == 0 && minutes == 0) {
+            System.out.println("0:00 AM");
+            return;
         }
 
         if (hours == 0) {
