@@ -7,6 +7,6 @@ public class FVCalc {
 // the revelant formula 
         double futureValue = currentValue * Math.pow((1 + rate), years);
 // print the result 
-System.out.println("After " + years + " years, a $" + currentValue + " saved at " + (rate * 100) + "% will yield $" + (int) fut);
+System.out.println("After " + years + " years, a $" + currentValue + " saved at " + (rate * 100) + "% will yield $" + (int) futureValue);
     }
 }
